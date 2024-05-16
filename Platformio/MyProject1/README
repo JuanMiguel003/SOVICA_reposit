@@ -1,0 +1,21 @@
+Este proyecto basado en las clases y codigo suministrado por el prof Alonso. 
+funciona perfecto para Modbus   """SLAVE"""
+conexion de IC para conversion de UARTTTL a RS485
+        VCC ---------------+
+                           |
+                   +-------x-------+
+        RXD <------| R             |
+                   |              B|-----------<> B
+        TXD ------>| D    ADM483   |
+ESP                |               |     RS485 bus side
+        RTS --+--->| DE            |
+              |    |              A|-----------<> A
+              +----| /RE           |
+                   +-------x-------+
+                           |
+                          GND
+
+nota: para simulacion con el programa Modbus Poll regularmente necesita la configuracion DTR="activa"
+
+
+Configurar los parametros de la comunicacion en lib/ModbusUart/etiquetaglo.h
