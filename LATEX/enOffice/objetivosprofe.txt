@@ -1,0 +1,24 @@
+Objetivo generales:
+
+Realizar el diseno y construccion de un equipo capaz de medir la concentracion de humo, velocidad del viento y temperatura que permita determinar los paramentros de activacion de un detector de humo fotelectrico.
+
+Objetivos especificos
+
+1 Determinar los valores de funcionamiento (temperatura, concentracion de humo y velocidad de viento) segun la norma de sistemas de detccion de incendio Venezolanas.
+
+2 Investigar y clasificar los difernetes metodos y equipos para realizar pruebas de funcionamiento y calibracion en detectores de huno fotoelectricos.
+
+3 Disenar y prorponer un equipo capaz de medir los valores de concentrcion de humo, velocidad del viento, y temperatura, a los cuales son semetidos un detector de humo fotoelectrico.
+
+4 Seleccionar los sensores, actuadores, microcontroladores y demas elementos electronicos para determinar dichos parametros.
+
+5 Disenar el hardaware necesario para la interconexion de los sensores, actuadores y microncotroladores necesarios para el funcionamiento del equipo.
+
+5 Realizar los programas, en un microcontrolador, necesarios para controlar los actuadores y, segun los valores de entrada en los sensores, generar los valores necesarios de concentracion de humo y velocidad del viento.
+
+6 Disenar una o mas placas de circuito impreso para interconectar los dispositvos de medicion y control.
+
+
+7 construir y ensamblar el equipo.
+
+8 realizar las pruebas y mediciones necesarias para determinar el funcionamiento del mismo.

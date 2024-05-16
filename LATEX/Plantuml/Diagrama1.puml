@@ -1,0 +1,12 @@
+@startuml
+    title Encabecado
+
+    actor   Juan
+    actor   Anteproyecto
+    Juan -> Anteproyecto
+    Anteproyecto ->Ucv 
+
+
+
+
+@enduml
