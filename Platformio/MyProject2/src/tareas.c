@@ -1,10 +1,70 @@
+
 #include "modbus.h"
 #include "driver/gpio.h"
+#include "etiquetaglo.h"
+
 
 extern UINT16_VAL MBHoldingRegister[maxHoldingRegister];
 extern UINT16_VAL MBInputRegister[maxInputRegister];
 extern UINT16_VAL MBCoils;
 extern UINT16_VAL MBDiscreteInputs;
+
+void TaskBlink(void *pvParameters)
+{   // SECCION AUXILIAR SOLO PARA PRUEBA
+extern int estado;  //estado=1 -- se recibio data uartN
+extern bool TX;     //Tx=1 -- write about modbus protocol in uart
+
+
+gpio_set_direction(GPIO_LED,GPIO_MODE_OUTPUT);
+
+printf("TaskBlink esata coriendoen el nucleo: %d \n\r", xPortGetCoreID());
+
+while (1)
+  {
+    switch (estado)
+    {
+    case 1:    //RECIBIO ALGO POR EL UART
+      for (size_t i = 0; i < 4; i++)
+      {
+        gpio_set_level(GPIO_LED,1);
+        vTaskDelay(pdMS_TO_TICKS(300));
+        gpio_set_level(GPIO_LED,0);
+        vTaskDelay(pdMS_TO_TICKS(200));        
+      }
+      if (TX) {estado=2;
+                TX=false;}
+      else estado=0;
+      break;
+
+    case 2:    //TRANSMITIO  ALGO POR EL UART
+      for (size_t i = 0; i < 2; i++)
+      {
+        gpio_set_level(GPIO_LED,1);
+        vTaskDelay(pdMS_TO_TICKS(900));
+        gpio_set_level(GPIO_LED,0);
+        vTaskDelay(pdMS_TO_TICKS(800));        
+      }
+      estado=0;
+      break;
+
+    default:
+      gpio_set_level(GPIO_LED,1);
+      vTaskDelay(pdMS_TO_TICKS(TIME_ON));
+
+      gpio_set_level(GPIO_LED,0);
+      vTaskDelay(pdMS_TO_TICKS(TIME_OFF));
+      break;
+    }
+
+    // gpio_set_level(GPIO_LED,1);
+    // vTaskDelay(pdMS_TO_TICKS(TIME_ON));
+
+    // gpio_set_level(GPIO_LED,0);
+    // vTaskDelay(pdMS_TO_TICKS(TIME_OFF));
+
+
+  }       //FIN DEL WHILE(LED)
+}
 
 void TareaEntradaDatos(void *Parametro)
 {
@@ -75,3 +135,5 @@ void TareaSetCoils(void *Parametro)
         vTaskDelay(200 / portTICK_PERIOD_MS);
     }
 }
+
+

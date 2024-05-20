@@ -1,5 +1,5 @@
 #include "modbus.h"
-// #include "C:\Users\Temporal\Documents\PlatformIO\Projects\MyProject1\include\etiquetaglo.h"
+
 #include "etiquetaglo.h"
 bool TX=false;
 
