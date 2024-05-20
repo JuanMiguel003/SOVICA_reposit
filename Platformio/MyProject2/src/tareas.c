@@ -2,8 +2,8 @@
 #include "modbus.h"
 #include "driver/gpio.h"
 #include "etiquetaglo.h"
-
-
+#include "freertos/FreeRTOS.h"
+#include "def23.h"
 extern UINT16_VAL MBHoldingRegister[maxHoldingRegister];
 extern UINT16_VAL MBInputRegister[maxInputRegister];
 extern UINT16_VAL MBCoils;

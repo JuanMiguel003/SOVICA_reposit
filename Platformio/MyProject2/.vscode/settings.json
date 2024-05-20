@@ -1,5 +1,18 @@
 {
     "files.associations": {
-        "compare": "cpp"
-    }
+        "*.c": "c",
+        "compare": "cpp",
+        "modbusmaster.h": "c",
+        "def23.h": "c",
+        "stdint.h": "c",
+        "modbus.h": "c",
+        "etiquetaglo.h": "c",
+        "freertos.h": "c",
+        "uarts.h": "c",
+        "stdlib.h": "c",
+        "string.h": "c",
+        "stdio.h": "c",
+        "crc16.h": "c"
+    },
+    "CodeGPT.apiKey": "Ollama"
 }

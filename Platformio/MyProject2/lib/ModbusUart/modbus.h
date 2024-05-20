@@ -1,7 +1,10 @@
-//#include "uarts.h"
-#include "def23.h"
-#include "crc16.h"
+// #include "uarts.h"
+// #include "def23.h"
+// #include "crc16.h"
 #include "driver/uart.h"
+
+#include <stdint.h>
+// #include "def23.h"
 
 
 /*

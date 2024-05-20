@@ -1,5 +1,4 @@
-
-#include "freertos/FreeRTOS.h"
+#include <stdint.h>
 
 typedef struct
 {
@@ -34,13 +33,13 @@ typedef struct
     uint16_t b15 : 1;
 } UINT16_BITS;
 
-typedef union
+typedef union _BYTE_VAL
 {
     UINT8_BITS bits;
     uint8_t Val;
 } UINT8_VAL;
 
-typedef union 
+typedef union _WORD_VAL
 {
     uint16_t Val;
     UINT16_BITS bits;
@@ -52,7 +51,7 @@ typedef union
 
 } UINT16_VAL;
 
-typedef union 
+typedef union _DWORD_VAL
 {
     uint32_t Val;
     struct
@@ -83,7 +82,7 @@ typedef union
     uint16_t w[2];
 } UINT32_VAL;
 
-typedef union 
+typedef union _INT_VAL
 {
     unsigned int Val;
     struct
@@ -136,7 +135,9 @@ typedef union
 }float_VAL;
 
 
+
 #define bitRead(value, bit) (((value) >> (bit)) & 0x01)
 #define bitSet(value, bit) ((value) |= (1UL << (bit)))
 #define bitClear(value, bit) ((value) &= ~(1UL << (bit)))
 #define bitWrite(value, bit, bitvalue) ((bitvalue) ? bitSet(value, bit) : bitClear(value, bit))
+

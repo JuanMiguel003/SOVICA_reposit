@@ -1,6 +1,10 @@
 #include "modbus.h"
-
+#include "crc16.h"
 #include "etiquetaglo.h"
+#include <stdbool.h>
+#include "def23.h"
+
+
 bool TX=false;
 
 
