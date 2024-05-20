@@ -14,5 +14,5 @@
         "stdio.h": "c",
         "crc16.h": "c"
     },
-    "CodeGPT.apiKey": "Ollama"
+    "CodeGPT.apiKey": "OpenAI"
 }

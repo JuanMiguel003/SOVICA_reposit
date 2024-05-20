@@ -11,5 +11,6 @@
 #define TIME_ON 3000
 #define TIME_OFF 3000
 
+#define NUM_DEVICES 3
 
 
