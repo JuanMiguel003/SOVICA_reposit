@@ -59,10 +59,10 @@ void TareaEventosUARTN(void *Parametro)
             bzero(datoRX, tamBUFFER);
             if (evento.type == UART_DATA)
             {
+                printf("\nRECIBIO");
                 uart_read_bytes(MB_NUM_UART, datoRX, evento.size, portMAX_DELAY);
                 modbusSerial(datoRX, evento.size);
                 estado=1;
-            
                 vTaskDelay(pdMS_TO_TICKS(10));
             }
         }

@@ -40,24 +40,24 @@ void TaskModbusMaster1(void *pvParameters)
 
     Mbpoll1[0].SlaveID =    1;
     Mbpoll1[0].Fuction =    3;
-    Mbpoll1[0].Address.Val =    0x00;
-    Mbpoll1[0].Quantity.Val =   1;
+    Mbpoll1[0].Address.Val =    0x01;
+    Mbpoll1[0].Quantity.Val =   4;
     Mbpoll1[0].ScanRate =   1000;
     Mbpoll1[0].TipoDato = 0;
 
-    Mbpoll1[0].SlaveID =    2;
-    Mbpoll1[0].Fuction =    3;
-    Mbpoll1[0].Address.Val =    0x00;
-    Mbpoll1[0].Quantity.Val =   1;
-    Mbpoll1[0].ScanRate =   1000;
-    Mbpoll1[0].TipoDato = 0;
+    Mbpoll1[1].SlaveID =    2;
+    Mbpoll1[1].Fuction =    3;
+    Mbpoll1[1].Address.Val =    0x00;
+    Mbpoll1[1].Quantity.Val =   1;
+    Mbpoll1[1].ScanRate =   1000;
+    Mbpoll1[1].TipoDato = 0;
     
-    Mbpoll1[0].SlaveID =    3;
-    Mbpoll1[0].Fuction =    3;
-    Mbpoll1[0].Address.Val =    0x00;
-    Mbpoll1[0].Quantity.Val =   3;
-    Mbpoll1[0].ScanRate =   1000;
-    Mbpoll1[0].TipoDato = 0; 
+    Mbpoll1[2].SlaveID =    3;
+    Mbpoll1[2].Fuction =    3;
+    Mbpoll1[2].Address.Val =    0x00;
+    Mbpoll1[2].Quantity.Val =   3;
+    Mbpoll1[2].ScanRate =   1000;
+    Mbpoll1[2].TipoDato = 0; 
 
 
     UINT16_VAL CRC;
@@ -68,7 +68,7 @@ void TaskModbusMaster1(void *pvParameters)
 
     while (1)
     {
-    for (int i=0;NUM_DEVICES;i++)
+    for (int i=0;i<NUM_DEVICES;i++)
     {
         if (Mbpoll1[i].SlaveID != 0)
         {
@@ -86,7 +86,7 @@ void TaskModbusMaster1(void *pvParameters)
             datoTX[6] = CRC.byte.LB;
             datoTX[7] = CRC.byte.HB;
 
-            uart_write_bytes(UART_NUM_1, (const char *)datoTX, 8);
+            uart_write_bytes(MB_NUM_UART, (const char *)datoTX, 8);
 
             vTaskDelay(Mbpoll1[i].ScanRate / portTICK_PERIOD_MS);
         }

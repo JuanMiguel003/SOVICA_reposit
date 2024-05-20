@@ -24,7 +24,7 @@ Registers
 
 */
 
-#define ID_RTU_LOCAL 1
+// #define ID_RTU_LOCAL 1
 
 #define maxInputRegister 256
 #define maxHoldingRegister 256

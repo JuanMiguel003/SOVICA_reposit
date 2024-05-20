@@ -17,7 +17,7 @@ extern bool TX;     //Tx=1 -- write about modbus protocol in uart
 
 gpio_set_direction(GPIO_LED,GPIO_MODE_OUTPUT);
 
-printf("TaskBlink esata coriendoen el nucleo: %d \n\r", xPortGetCoreID());
+printf("TaskBlink esta coriendo en el nucleo: %d \n\r", xPortGetCoreID());
 
 while (1)
   {
