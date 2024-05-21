@@ -17,7 +17,7 @@ void TaskBlink(void *pvParameters)
     gpio_set_direction(GPIO_ROJ, GPIO_MODE_OUTPUT);
     gpio_set_direction(GPIO_AMA, GPIO_MODE_OUTPUT);
     gpio_set_direction(GPIO_VER, GPIO_MODE_OUTPUT);
-printf("TaskBlink esta coriendo en el nucleo: %d \n\r", xPortGetCoreID());
+printf("TaskBlink esta corriendo en el nucleo: %d \n\r", xPortGetCoreID());
 
 while (1)
   {

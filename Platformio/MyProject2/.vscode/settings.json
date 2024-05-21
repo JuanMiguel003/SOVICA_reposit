@@ -12,7 +12,11 @@
         "stdlib.h": "c",
         "string.h": "c",
         "stdio.h": "c",
-        "crc16.h": "c"
+        "crc16.h": "c",
+        "random": "c",
+        "type_traits": "c",
+        "gpio.h": "c",
+        "tareas.h": "c"
     },
-    "CodeGPT.apiKey": "OpenAI"
+    "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }

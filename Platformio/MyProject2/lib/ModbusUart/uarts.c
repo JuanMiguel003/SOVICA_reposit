@@ -33,7 +33,7 @@ void initUARTN()
     #ifdef MB_PIN_RTS
         uart_set_mode(MB_NUM_UART, UART_MODE_RS485_HALF_DUPLEX);
     #endif
-    xTaskCreatePinnedToCore(TareaEventosUARTN, "Tarea_para_UART", 1024 * 5, NULL, 12, NULL, 1);
+    xTaskCreatePinnedToCore(TareaEventosUARTN, "Tarea_para_UART", 1024 * 5, NULL, 6, NULL, 1);
 }
 
 
@@ -43,8 +43,6 @@ void initUARTN()
 //**************************************
 //*************** TASKs ****************
 //**************************************
-
-
 
 
 
@@ -59,15 +57,17 @@ void TareaEventosUARTN(void *Parametro)
             bzero(datoRX, tamBUFFER);
             if (evento.type == UART_DATA)
             {
-                printf("\nRECIBIO");
+
                 uart_read_bytes(MB_NUM_UART, datoRX, evento.size, portMAX_DELAY);
+                printf("\nRX_DATA size: [%d]",evento.size);
                 modbusSerial(datoRX, evento.size);
                 estado=1;
-                vTaskDelay(pdMS_TO_TICKS(10));
+                // vTaskDelay(pdMS_TO_TICKS(10));
             }
-        }
+            else {printf("\nUart event type: %d", evento.type);}
+            }
     }
-
+    
     free(datoRX);
     datoRX = NULL;
     vTaskDelete(NULL);

@@ -1,7 +1,7 @@
 
 #include "modbusMaster.h"
 #include "etiquetaglo.h"
-
+#include "tareas.h"
 //#include "modbus.h"
 
 extern UINT16_VAL MBHoldingRegister[256];
@@ -40,23 +40,23 @@ void TaskModbusMaster1(void *pvParameters)
 
     Mbpoll1[0].SlaveID =    1;
     Mbpoll1[0].Fuction =    3;
-    Mbpoll1[0].Address.Val =    0x01;
-    Mbpoll1[0].Quantity.Val =   4;
-    Mbpoll1[0].ScanRate =   1000;
+    Mbpoll1[0].Address.Val =    0x00;
+    Mbpoll1[0].Quantity.Val =   3;
+    Mbpoll1[0].ScanRate =   3000;
     Mbpoll1[0].TipoDato = 0;
 
     Mbpoll1[1].SlaveID =    2;
     Mbpoll1[1].Fuction =    3;
     Mbpoll1[1].Address.Val =    0x00;
     Mbpoll1[1].Quantity.Val =   1;
-    Mbpoll1[1].ScanRate =   1000;
+    Mbpoll1[1].ScanRate =   1500;
     Mbpoll1[1].TipoDato = 0;
     
     Mbpoll1[2].SlaveID =    3;
     Mbpoll1[2].Fuction =    3;
     Mbpoll1[2].Address.Val =    0x00;
     Mbpoll1[2].Quantity.Val =   3;
-    Mbpoll1[2].ScanRate =   1000;
+    Mbpoll1[2].ScanRate =   1500;
     Mbpoll1[2].TipoDato = 0; 
 
 
@@ -87,7 +87,7 @@ void TaskModbusMaster1(void *pvParameters)
             datoTX[7] = CRC.byte.HB;
 
             uart_write_bytes(MB_NUM_UART, (const char *)datoTX, 8);
-
+            printf("\nConsulta dipositivo %d",datoTX[0]);
             vTaskDelay(Mbpoll1[i].ScanRate / portTICK_PERIOD_MS);
         }
         else

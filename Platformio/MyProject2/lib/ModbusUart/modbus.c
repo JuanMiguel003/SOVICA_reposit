@@ -198,4 +198,5 @@ void modbusSerial(uint8_t *ByteArray, uint16_t Length)
             break;
         }
     }
+    else printf("\nError CRC");
 }
