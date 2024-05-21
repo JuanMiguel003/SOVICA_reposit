@@ -11,59 +11,69 @@ extern UINT16_VAL MBDiscreteInputs;
 
 void TaskBlink(void *pvParameters)
 {   // SECCION AUXILIAR SOLO PARA PRUEBA
-extern int estado;  //estado=1 -- se recibio data uartN
-extern bool TX;     //Tx=1 -- write about modbus protocol in uart
+// extern int estado;  //estado=1 -- se recibio data uartN
+// extern bool TX;     //Tx=1 -- write about modbus protocol in uart
 
-
-gpio_set_direction(GPIO_LED,GPIO_MODE_OUTPUT);
-
+    gpio_set_direction(GPIO_ROJ, GPIO_MODE_OUTPUT);
+    gpio_set_direction(GPIO_AMA, GPIO_MODE_OUTPUT);
+    gpio_set_direction(GPIO_VER, GPIO_MODE_OUTPUT);
 printf("TaskBlink esta coriendo en el nucleo: %d \n\r", xPortGetCoreID());
 
 while (1)
   {
-    switch (estado)
-    {
-    case 1:    //RECIBIO ALGO POR EL UART
-      for (size_t i = 0; i < 4; i++)
-      {
-        gpio_set_level(GPIO_LED,1);
-        vTaskDelay(pdMS_TO_TICKS(300));
-        gpio_set_level(GPIO_LED,0);
-        vTaskDelay(pdMS_TO_TICKS(200));        
-      }
-      if (TX) {estado=2;
-                TX=false;}
-      else estado=0;
-      break;
+     // Encender el LED rojo (simulando la luz roja del semáforo)
+        gpio_set_level(GPIO_ROJ, 1);
+        vTaskDelay(2000 / portTICK_PERIOD_MS); // Esperar 2 segundos
 
-    case 2:    //TRANSMITIO  ALGO POR EL UART
-      for (size_t i = 0; i < 2; i++)
-      {
-        gpio_set_level(GPIO_LED,1);
-        vTaskDelay(pdMS_TO_TICKS(900));
-        gpio_set_level(GPIO_LED,0);
-        vTaskDelay(pdMS_TO_TICKS(800));        
-      }
-      estado=0;
-      break;
+        // Apagar el LED rojo y encender el amarillo (simulando la luz amarilla)
+        gpio_set_level(GPIO_ROJ, 0);
+        gpio_set_level(GPIO_AMA, 1);
+        vTaskDelay(1000 / portTICK_PERIOD_MS); // Esperar 1 segundo
 
-    default:
-      gpio_set_level(GPIO_LED,1);
-      vTaskDelay(pdMS_TO_TICKS(TIME_ON));
+        // Apagar el LED amarillo y encender el verde (simulando la luz verde)
+        gpio_set_level(GPIO_AMA, 0);
+        gpio_set_level(GPIO_VER, 1);
+        vTaskDelay(2000 / portTICK_PERIOD_MS); // Esperar 2 segundos
 
-      gpio_set_level(GPIO_LED,0);
-      vTaskDelay(pdMS_TO_TICKS(TIME_OFF));
-      break;
+        // Apagar el LED verde (simulando la luz apagada)
+        gpio_set_level(GPIO_VER, 0);
+        vTaskDelay(1000 / portTICK_PERIOD_MS); // Esperar 1 segundo
     }
 
-    // gpio_set_level(GPIO_LED,1);
-    // vTaskDelay(pdMS_TO_TICKS(TIME_ON));
+  //   switch (estado)
+  //   {
+  //   case 1:    //RECIBIO ALGO POR EL UART
+  //     for (size_t i = 0; i < 4; i++)
+  //     {
+  //       gpio_set_level(GPIO_LED,1);
+  //       vTaskDelay(pdMS_TO_TICKS(300));
+  //       gpio_set_level(GPIO_LED,0);
+  //       vTaskDelay(pdMS_TO_TICKS(200));        
+  //     }
+  //     if (TX) {estado=2;
+  //               TX=false;}
+  //     else estado=0;
+  //     break;
 
-    // gpio_set_level(GPIO_LED,0);
-    // vTaskDelay(pdMS_TO_TICKS(TIME_OFF));
+  //   case 2:    //TRANSMITIO  ALGO POR EL UART
+  //     for (size_t i = 0; i < 2; i++)
+  //     {
+  //       gpio_set_level(GPIO_LED,1);
+  //       vTaskDelay(pdMS_TO_TICKS(900));
+  //       gpio_set_level(GPIO_LED,0);
+  //       vTaskDelay(pdMS_TO_TICKS(800));        
+  //     }
+  //     estado=0;
+  //     break;
 
+  //   default:
+  //     gpio_set_level(GPIO_LED,1);
+  //     vTaskDelay(pdMS_TO_TICKS(TIME_ON));
 
-  }       //FIN DEL WHILE(LED)
+  //     gpio_set_level(GPIO_LED,0);
+  //     vTaskDelay(pdMS_TO_TICKS(TIME_OFF));
+  //     break;
+  //   }
 }
 
 void TareaEntradaDatos(void *Parametro)
