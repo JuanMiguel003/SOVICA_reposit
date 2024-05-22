@@ -1,21 +1,26 @@
-Este proyecto basado en las clases y codigo suministrado por el prof Alonso. 
+Este proyecto basado en las clases y ayuda suministrado por el prof Alonso. 
 funciona perfecto para Modbus   """SLAVE"""
-conexion de IC para conversion de UARTTTL a RS485
+conexion de IC para conversion de UARTTL a RS485
         VCC ---------------+
                            |
                    +-------x-------+
-        RXD <------| R             |
-                   |              B|-----------<> B
-        TXD ------>| D    ADM483   |
-ESP                |               |     RS485 bus side
-        RTS --+--->| DE            |
-              |    |              A|-----------<> A
-              +----| /RE           |
+        RXD <------|RO             |
+                   |            /DO|-----------<> B-
+            -+-----|/RE DS75176BN  |
+ESP          |     |               |     RS485 bus side
+        RTS -+-----|DE             |
+                   |             DO|-----------<> A+
+        TXD ------>|DI             |
                    +-------x-------+
                            |
                           GND
+Configurar los PINES y parametros de la comunicacion en lib/ModbusUart/etiquetaglo.h
+
 
 nota: para simulacion con el programa Modbus Poll regularmente necesita la configuracion DTR="activa"
 
+PREDETERMINADO: Velocidad de comunicacion UART1 9600
 
-Configurar los parametros de la comunicacion en lib/ModbusUart/etiquetaglo.h
+
+
+
