@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1720731889.95815 "c:/Users/Temporal/Documents/GitProyect/SOVICA_reposit/LATEX/DiagramaGantt/main.tex" "Build/main.pdf" "main" 1720731893.42908 0
-  "Build/main.aux" 1720731892 67 ac16f18b5140cbac5050582ba3ed54cc "pdflatex"
+["pdflatex"] 1721069469.16545 "c:/Users/Temporal/Documents/GitProyect/SOVICA_reposit/LATEX/DiagramaGantt/DiagramaJuan.tex" "Build/DiagramaJuan.pdf" "DiagramaJuan" 1721069474.20941 0
+  "Build/DiagramaJuan.aux" 1721069473 67 ac16f18b5140cbac5050582ba3ed54cc "pdflatex"
   "C:/Users/Temporal/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1720647436 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Temporal/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1720645772 24266174 c4be379a198f96d05fd7c9be5a5159c3 ""
   "C:/Users/Temporal/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -108,10 +108,10 @@
   "C:/Users/Temporal/AppData/Local/Programs/MiKTeX/tex/latex/tools/shellesc.sty" 1718356376 4121 6039ae6d0916154d7ba5f20a77b9ab2c ""
   "C:/Users/Temporal/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/Temporal/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/Temporal/Documents/GitProyect/SOVICA_reposit/LATEX/DiagramaGantt/main.tex" 1720731888 3190 316816f25f2eff73745dfb0bb46bf1e2 ""
-  "main.tex" 1720731888 3190 316816f25f2eff73745dfb0bb46bf1e2 ""
+  "DiagramaJuan.tex" 1721069420 3191 b7bca07f34dffb9395107ccfdb6daf6f ""
+  "c:/Users/Temporal/Documents/GitProyect/SOVICA_reposit/LATEX/DiagramaGantt/DiagramaJuan.tex" 1721069420 3191 b7bca07f34dffb9395107ccfdb6daf6f ""
   (generated)
-  "Build/main.aux"
-  "Build/main.log"
-  "Build/main.pdf"
+  "Build/DiagramaJuan.aux"
+  "Build/DiagramaJuan.log"
+  "Build/DiagramaJuan.pdf"
   (rewritten before read)

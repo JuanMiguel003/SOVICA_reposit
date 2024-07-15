@@ -1,7 +1,7 @@
 PWD c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt
 INPUT C:\Users\Temporal\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\main.tex
-OUTPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\main.log
+INPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\DiagramaJuan.tex
+OUTPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\DiagramaJuan.log
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\tex\latex\standalone\standalone.cls
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\tex\latex\standalone\standalone.cls
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\tex\latex\tools\shellesc.sty
@@ -170,10 +170,10 @@ INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfcalendar.code.tex
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\main.aux
-INPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\main.aux
-INPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\main.aux
-OUTPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\main.aux
+INPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\DiagramaJuan.aux
+INPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\DiagramaJuan.aux
+INPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\DiagramaJuan.aux
+OUTPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\DiagramaJuan.aux
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -185,9 +185,9 @@ INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopd
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
-OUTPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\main.pdf
+OUTPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\DiagramaJuan.pdf
 INPUT C:\Users\Temporal\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\main.aux
+INPUT c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\DiagramaJuan.aux
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\Temporal\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx7.pfb

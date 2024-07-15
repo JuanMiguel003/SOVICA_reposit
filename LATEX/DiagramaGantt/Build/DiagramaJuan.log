@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.10)  11 JUL 2024 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.10)  15 JUL 2024 14:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Temporal/Documents/GitProyect/SOVICA_reposit/LATEX/DiagramaGantt/main.tex
-(c:/Users/Temporal/Documents/GitProyect/SOVICA_reposit/LATEX/DiagramaGantt/main.tex
+**c:/Users/Temporal/Documents/GitProyect/SOVICA_reposit/LATEX/DiagramaGantt/DiagramaJuan.tex
+(c:/Users/Temporal/Documents/GitProyect/SOVICA_reposit/LATEX/DiagramaGantt/DiagramaJuan.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
 (C:\Users\Temporal\AppData\Local\Programs\MiKTeX\tex/latex/standalone\standalone.cls
@@ -312,8 +312,8 @@ File: pgfcalendar.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count319
 \l__pdf_internal_box=\box66
-) (c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\main.aux)
-\openout1 = `main.aux'.
+) (c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\DiagramaJuan.aux)
+\openout1 = `DiagramaJuan.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
@@ -351,7 +351,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 
 [1
 
-{C:/Users/Temporal/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\main.aux)
+{C:/Users/Temporal/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\DiagramaJuan.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -359,14 +359,14 @@ L3 programming layer <2024-05-27>
  ) 
 Here is how much of TeX's memory you used:
  14704 strings out of 473903
- 324256 string characters out of 5725163
+ 324360 string characters out of 5725163
  1965908 words of memory out of 5000000
  37339 multiletter control sequences out of 15000+600000
  558996 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,8n,121p,477b,870s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,8n,121p,485b,870s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Temporal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Temporal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/Temporal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb>
-Output written on c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\main.pdf (1 page, 47166 bytes).
+Output written on c:\Users\Temporal\Documents\GitProyect\SOVICA_reposit\LATEX\DiagramaGantt\Build\DiagramaJuan.pdf (1 page, 46990 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
