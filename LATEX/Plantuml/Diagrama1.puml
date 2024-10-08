@@ -5,8 +5,4 @@
     actor   Anteproyecto
     Juan -> Anteproyecto
     Anteproyecto ->Ucv 
-
-
-
-
 @enduml
